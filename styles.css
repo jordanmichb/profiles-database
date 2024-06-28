@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px 100px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    flex: 1;
+    font-size: 3rem;
+    min-width: 300px;
+}
+
+header a {
+    position: absolute;
+    font-size: 1.3rem;
+    right: 0;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.msg {
+    margin-bottom: 20px;
+}
+
+.msg.error {
+    color: red;
+}
+
+.msg.success {
+    color: green;
+}
+
+.add {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+table {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+
+th, td {
+    border: 1px solid;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+th:first-child, th:last-child,
+td:first-child, td:last-child {
+    width: 300px;
+}
+
+form {
+    margin: 0 auto;
+    width: min-content;
+    display: grid;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    width: 6rem;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form input, form > textarea {
+    padding: .25rem;
+    margin-bottom: 30px;
+    width: clamp(300px, 40vw, 500px);
+}
+
+textarea {
+    resize: none;
+}
+
+.form_action button {
+    padding: .2rem 1rem;
+    width: 100px;
+    cursor: pointer;
+}
+
+.edu_header, .pos_header {
+    justify-self: start;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.edu_header button, .pos_header button {
+    padding: .1rem .5rem;
+}
+
+.form_action {
+    margin-left: auto;
+}
+
+.view_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    width: 500px;
+    margin: 0 auto 20px auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: start;
+    overflow-wrap: break-word;
+}
+
+.view_pos, .view_edu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.view_pos span:last-child, .view_edu span:last-child {
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+.view_container p {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.view_container span {
+    font-weight: normal;
+}
+
+.education, .position {
+    display: grid;
+    row-gap: 5px;
+}
+
+.education input, .position input {
+    padding: .25rem;
+}
+
+.education label, .position label {
+   font-weight: normal;
+}
+
+.school {
+    margin-bottom: 0;
+}
+
+.del_edu, .del_pos {
+    padding: 0.1rem 0.5rem;
+    margin-bottom: 30px;
+    justify-self: end;
+}
+
+.position textarea {
+    padding: .25rem;
+} 
